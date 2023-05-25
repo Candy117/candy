@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div{
+            border: 2px solid black;
+            padding-left: 10%;
+            margin-left: 30%;     
+            margin-right: 30%;      
+
+        }
+        #btn{
+            background-color:limegreen;
+           box-shadow: 4px 4px 8px grey;
+           margin-bottom: 10px;
+           margin-top:10px;
+           border-color: aliceblue;
+           padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+<h1>Feedback Form</h1>
+<p>Please provide your feedback below</p>
+<form action="" method="post">
+<label for="problem">Types of problem</label><br>
+<select name="problem" id="problem" required>
+    <option value="">--Select problem type--</option>
+    <option value="Technical (e.g. website is down)">Technical (e.g. website is down)</option>
+    <option value="Product Not Available">Product Not Available</option>
+    <option value="Missing Information about the product">Missing Information about the product</option>
+    <option value="Others">Others</option>
+</select><br>
+
+<label for="user">Username:</label><br>
+<input type="text" name="user" id="user" required><br>
+<label for="email">Email:</label><br>
+<input type="text" name="email" id="email" required><br>
+<label for="location">Location:</label><br>
+<input type="text" name="location" id="location" required><br>
+<label for="phone">Phone:</label><br>
+<input type="text" name="phone" id="phone" required><br>
+<label for="desc">Description of the Problem:</label><br>
+<textarea name="desc" id="desc" cols="20" rows="5"></textarea><br>
+<input type="checkbox"> Notification of problem solved
+<br>
+<button type="submit" value="submit" id="btn">Submit</button>
+</form>
+</div>
+</body>
+
+</html>
